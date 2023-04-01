@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./custom/yxhsehdwusx.ejs") %>
+    <link rel="stylesheet" href="/Css/xvcwshysnyx.css" />
+  </head>
+  <body class="lp-1bg-0">
+    <%- include("./custom/zjkcqxqfym.ejs") %>
+    <div class="header-border"></div>
+    <div class="row1-container">
+      <div
+        class="box box-down cyan boxactive"
+        onclick="window.location.href  ='/api/staff/cards/edit'"
+      >
+        <h2>Card Editor</h2>
+        <p>Edit and delete cards</p>
+        <img
+          src="https://assets.codepen.io/2301174/icon-supervisor.svg"
+          alt=""
+          class="icon"
+        />
+      </div>
+
+      <div
+        class="box red boxactive"
+        onclick="window.location.href = '/api/staff/cards/add'"
+      >
+        <h2>Add Card</h2>
+        <p>Add new card to the database and to the cards folder</p>
+        <img src="/Images/Nezoku.png" class="small icon" />
+      </div>
+
+      <% if (["Developer", "Head-Card-Creator"].includes(user_info.type)) { %>
+      <div
+        class="box box-down blue boxactive"
+        onclick="window.location.href = '/staff'"
+      >
+        <% } else{ %>
+          <div
+        class="box box-down blue boxactive lp-2bl2a"
+        style="cursor:not-allowed;"
+      >
+          <% } %> 
+        <h2>Lapis Staff</h2>
+        <p>
+          See the staff team and their permissions. Also add new staff members!
+        </p>
+        <img
+          src="https://assets.codepen.io/2301174/icon-calculator.svg"
+          class="small icon"
+        />
+      </div>
+    </div>
+    <div class="row2-container">
+      <div class="box-down box orange boxactive"
+      onclick="window.location.href = '/api/staff/get/events'">
+        <h2>Event Manager</h2>
+        <p>Edit the events and add new ones</p>
+         <img src="https://cdn.discordapp.com/attachments/992333622411542588/1007961419364454520/summerbadge22.png" class="small icon" /> 
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.lp-2vlxc3 {
+  border: 0.125rem solid white;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.lp-4vlxc5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0.625rem 1.25rem;
+}
+
+.lp-7vlxc8 {
+  overflow: hidden;
+  background-color: var(--gray-discord);
+  margin-top: 0.3125rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+
+.lp-2vlxc3:focus {
+  margin-bottom: 220px;
+}
+
+.lp-2vlxc3:focus .lp-7vlxc8 {
+  padding: 1.25rem 3.125rem;
+  height: 200px;
+}
+
+.lp-43cklx-2 {
+  margin-top: 0.5625rem;
+}
+
+.lp-43cklx-1 {
+  background-color: var(--dark-discord) !important;
+  font-family: var(--font-sans);
+}

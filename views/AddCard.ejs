@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./custom/yxhsehdwusx.ejs") %>
+    <link rel="stylesheet" href="/Css/bcvscekcos.css" />
+    <script src="/Js/mxbasdxny.min.js" defer></script>
+  </head>
+  <body class="lp-1bg-0">
+    <%- include("./custom/lvcbshbsyx.ejs") %> <%-
+    include("./custom/zjkcqxqfym.ejs") %>
+    <section class="lp-2clwx1 container">
+      <div class="card-row" data-type="<%= user_info.type %>"></div>
+      <div class="form-group">
+        <button class="lp-btn7 lp-2btn1-a" type="button">Add New Card</button>
+        <button class="lp-btn7 lp-btn7-g lp-3btn2-s" type="submit">
+          Save It!
+        </button>
+        <button
+          class="lp-btn7 lp-btn7-r lp-4btn3-c"
+          type="button"
+          data-toggle="modal"
+          data-target="#customP_modal"
+        >
+          Custom Properties
+        </button>
+      </div>
+    </section>
+
+    <div
+      class="fade modal"
+      id="customP_modal"
+      tabindex="-1"
+      aria-labelledby="customP_label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="root-p modal-title">Custom Properties</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <path
+                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+              />
+            </svg>
+          </div>
+          <div class="modal-body" style="margin-top: 1.7rem !important">
+            <div class="group">
+              <input
+                type="text"
+                name="name"
+                required="required"
+                autocomplete="off"
+                class="card-name-sub"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Custom Name</label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                name="act"
+                required="required"
+                autocomplete="off"
+                class="card-act-sub"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Custom Act</label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                name="sub-act"
+                required="required"
+                autocomplete="off"
+                class="card-sub-act-sub"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Custom Sub-Act</label>
+            </div>
+            <div class="group">
+              <select
+                name="rarity"
+                style="
+                  padding: 0.625rem 0.625rem 0.625rem 0px !important;
+                  cursor: pointer;
+                "
+                class="rarity-sub"
+              >
+                <option value="1" selected>⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+              </select>
+              <label>Custom Rarity</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="lp-btn7 lp-btn7-g lp-4btn3-s" data-dismiss="modal">
+              Save
+            </button>
+            <button class="lp-btn7 lp-btn7-r lp-5btn4-c" data-dismiss="modal">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
